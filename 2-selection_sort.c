@@ -21,10 +21,10 @@ void selection_sort(int *array, size_t size)
 			{
 				imin = j;
 			}
-			print_array(array, size);
 		}
 		temp = array[imin];
 		array[imin] = array[i];
 		array[i] = temp;
+		print_array(array, size);
 	}
 }
