@@ -13,9 +13,8 @@
  * @next: Pointer to the next element of the list
  */
 
-typedef struct listint_s
-{
-	const int n;
+typedef struct listint_s {
+
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
@@ -30,5 +29,6 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void quick_sort_aux(int *array, int low, int high, size_t size);
 void shell_sort(int *array, size_t size);
+void counting_sort(int *array, size_t size);
 
 #endif
